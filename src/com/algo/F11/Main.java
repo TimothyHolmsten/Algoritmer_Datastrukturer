@@ -2,10 +2,11 @@ package com.algo.F11;
 
 import com.algo.F11.Factory.Activity;
 import com.algo.F11.Factory.Factory;
-import com.algo.F11.KnapSack.Item;
-import com.algo.F11.KnapSack.KnapSack;
+import com.algo.F11.NumberLine.NumberLine;
+import com.algo.F11.NumberLine.Point;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by timothy on 2017-02-20, com.algo.F11.
@@ -31,5 +32,14 @@ public class Main {
         Factory factory = new Factory(activities);
         System.out.println("Workers: " + factory.calculateWorkersNeeded());
         //System.out.println(factory.getActivities().toString());
+
+        ArrayList<Point> points = new ArrayList<>();
+        int last = 0;
+        for (int i = 0; i < new Random().nextInt(10) + 5; i++) {
+            last = new Random().nextInt(4) + last + 1;
+            points.add(new Point(last));
+        }
+        System.out.println(points);
+        System.out.println(new NumberLine(points).calculateLines());
     }
 }
