@@ -2,21 +2,6 @@ package com.algo.TEN1_160324.Uppg2;
 
 public class BinarySearchTree<E extends Comparable<E>> {
 
-    private static class Node<E> {
-        private E data;
-        private Node<E> left, right;
-
-        private Node(E d) {
-            data = d;
-            left = right = null;
-        }
-
-        @Override
-        public String toString() {
-            return data.toString();
-        }
-    }
-
     private Node<E> root;
 
     public BinarySearchTree() {
@@ -74,5 +59,20 @@ public class BinarySearchTree<E extends Comparable<E>> {
             else
                 break;
         return node.data;
+    }
+
+    private static class Node<E> {
+        private E data;
+        private Node<E> left, right;
+
+        private Node(E d) {
+            data = d;
+            left = right = null;
+        }
+
+        @Override
+        public String toString() {
+            return data.toString();
+        }
     }
 }

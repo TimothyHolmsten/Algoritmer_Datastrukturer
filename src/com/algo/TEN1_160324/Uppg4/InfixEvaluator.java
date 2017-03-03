@@ -5,13 +5,6 @@ import java.util.Stack;
 
 public class InfixEvaluator {
 
-    public static class SyntaxErrorException extends Exception {
-
-        SyntaxErrorException(String message) {
-            super(message);
-        }
-    }
-
     private static final String OPERATORS = "+-*/";
     private static final Stack<Integer> numbers = new Stack<>();
     private static final Stack<Character> operators = new Stack<>();
@@ -106,5 +99,12 @@ public class InfixEvaluator {
             throw new SyntaxErrorException("Syntax Error: The stack is empty");
         }
         return value;
+    }
+
+    public static class SyntaxErrorException extends Exception {
+
+        SyntaxErrorException(String message) {
+            super(message);
+        }
     }
 }

@@ -2,18 +2,6 @@ package com.algo.TEN1_160324.Uppg1;
 
 public class SingleLinkedList<E> {
 
-    private static class Node<E> {
-
-        private E data;
-        private Node<E> next;
-
-        public Node(E data, Node<E> next) {
-            this.data = data;
-            this.next = next;
-        }
-
-    }
-
     private Node<E> head;
 
     public SingleLinkedList() {
@@ -54,7 +42,6 @@ public class SingleLinkedList<E> {
         }
     }
 
-
     public int size() {
         return size(head);
     }
@@ -63,5 +50,17 @@ public class SingleLinkedList<E> {
         if (node == null) return 0;
 
         return 1 + size(node.next);
+    }
+
+    private static class Node<E> {
+
+        private E data;
+        private Node<E> next;
+
+        public Node(E data, Node<E> next) {
+            this.data = data;
+            this.next = next;
+        }
+
     }
 }
