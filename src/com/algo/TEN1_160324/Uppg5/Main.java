@@ -15,10 +15,12 @@ public class Main {
 
     static int maxValue(int totalWeight, int[] value, int[] weight) {
 
-        int[] maxValue = new int[value.length];
+        int[] maxValue = new int[totalWeight + 1];
         for (int i = 0; i < value.length; i++)
-
-
+            for (int m = 1; m <= totalWeight; m++)
+                if (weight[i] <= m && maxValue[m] < maxValue[m - weight[i]] + value[i] )
+                        maxValue[m] = value[i] + maxValue[m - weight[i]];
+        return maxValue[totalWeight];
     }
 
 }
