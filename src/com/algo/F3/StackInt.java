@@ -5,7 +5,10 @@ package com.algo.F3;
  */
 public interface StackInt<T> {
     T push(T obj);
+
     T peek();
+
     T pop();
+
     boolean empty();
 }

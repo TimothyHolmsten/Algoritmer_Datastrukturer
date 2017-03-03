@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         BinaryTree<Integer> binaryTree = new BinaryTree<>();
         binaryTree.add(5);
-        for(int i = 0; i < 20; i++)
+        for (int i = 0; i < 20; i++)
             binaryTree.add(i);
         System.out.println(binaryTree);
 

@@ -43,13 +43,13 @@ public class Airport {
         for (int t = 0; t < TENYEARS; t += 5) {
 
             //if (startingProb.query()) {
-            if(t == 0) {
+            if (t == 0) {
                 Aircraft aircraft = new Aircraft();
                 startingQueue.offer(aircraft);
                 Aircrafts.add(aircraft);
             }
-            if(t == 5) {
-            //if (landingProb.query()) {
+            if (t == 5) {
+                //if (landingProb.query()) {
                 Aircraft aircraft = new Aircraft();
                 landingQueue.offer(aircraft);
                 Aircrafts.add(aircraft);

@@ -1,6 +1,5 @@
 package com.algo.F5.Redovisning;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 
 /**

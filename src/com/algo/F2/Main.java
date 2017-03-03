@@ -70,8 +70,8 @@ public class Main {
         Niclas test
          */
         SingleLinkedList<String> niclas = new SingleLinkedList<>();
-        for(int i = 0; i < 4; i++) {
-            niclas.add(""+i);
+        for (int i = 0; i < 4; i++) {
+            niclas.add("" + i);
 
         }
         niclas.remove(3);
@@ -84,8 +84,8 @@ public class Main {
          */
 
         SingleLinkedListNoTail<String> nicke = new SingleLinkedListNoTail<>();
-        for(int i = 0; i < 4; i++) {
-            nicke.add(""+i);
+        for (int i = 0; i < 4; i++) {
+            nicke.add("" + i);
         }
         System.out.println(nicke);
         Iterator<String> nickeItr = nicke.iterator();

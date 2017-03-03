@@ -14,8 +14,8 @@ public class KnapSack {
         for (int j = 0; j < items.length; j++) {
             int cost_item = -1;
             for (int i = 0; i < items.length; i++)
-                if (items[i] != null && (double) ( items[i].getValue() / items[i].getWeight() ) > cost) {
-                    cost = (double) ( items[i].getValue() / items[i].getWeight() );
+                if (items[i] != null && (double) (items[i].getValue() / items[i].getWeight()) > cost) {
+                    cost = (double) (items[i].getValue() / items[i].getWeight());
                     cost_item = i;
                 }
             if (cost_item == -1)

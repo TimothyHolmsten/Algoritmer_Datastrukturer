@@ -1,6 +1,5 @@
 package com.algo;
 
-import com.algo.F2.SingleLinkedList;
 import com.algo.F2.SingleLinkedListNoTail;
 import com.algo.F3.PostfixEvaluator;
 
@@ -15,13 +14,13 @@ public class Main {
         int r = 0, p = 40;
         int n = 20;
         //for (int n = 1; n <= p; n++) {
-            for (int i = 1; i <= n; i++) {
-                for (int j = 1; j <= i; j++)
-                    for (int k = j; k <= i + j; k++)
-                        for (int m = 1; m <= i + j - k; m++)
-                            r++;//Enkel sats
-                array.add(r);
-            }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++)
+                for (int k = j; k <= i + j; k++)
+                    for (int m = 1; m <= i + j - k; m++)
+                        r++;//Enkel sats
+            array.add(r);
+        }
         //}
         System.out.println(array);
 

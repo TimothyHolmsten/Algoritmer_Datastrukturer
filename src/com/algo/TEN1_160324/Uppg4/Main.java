@@ -10,10 +10,10 @@ public class Main {
 
         String line;
         Scanner in = new Scanner(System.in);
-        while(true){
+        while (true) {
             System.out.println("Enter a infix expression without parenthesises to evaluate");
             line = in.nextLine();
-            if(!line.equals("")){
+            if (!line.equals("")) {
                 try {
                     int result = evaluator.eval(line);
                     System.out.println("Value is " + result);
