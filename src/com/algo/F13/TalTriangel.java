@@ -5,6 +5,7 @@ package com.algo.F13;
  */
 public class TalTriangel {
     public static int maxValue(int[] triangle) {
+        // alreadyKnown size is not optimized at all
         return maxValue(triangle, 0, 0, new int[(int) Math.pow(2, ((triangle.length) / 2))]);
     }
 
@@ -14,8 +15,6 @@ public class TalTriangel {
         }
         if (alreadyKnown[position] != 0)
             return alreadyKnown[position];
-
-        System.out.println(position);
 
         int left = maxValue(triangle, position + 1 + depth, depth + 1, alreadyKnown) + triangle[position];
         int right = maxValue(triangle, position + 2 + depth, depth + 1, alreadyKnown) + triangle[position];
