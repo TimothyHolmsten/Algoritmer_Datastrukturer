@@ -1,4 +1,4 @@
-package com.algo.TEN1_160610.Uppg3;
+package com.algo.Tentamen.TEN1_160610.Uppg3;
 
 public class Main {
 

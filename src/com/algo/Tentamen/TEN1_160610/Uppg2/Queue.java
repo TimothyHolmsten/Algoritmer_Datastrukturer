@@ -1,7 +1,7 @@
-package com.algo.TEN1_160610.Uppg2;
+package com.algo.Tentamen.TEN1_160610.Uppg2;
 
 /**
- * Created by timothy on 2017-03-03, com.algo.TEN1_160610.Uppg2.
+ * Created by timothy on 2017-03-03, com.algo.Tentamen.TEN1_160610.Uppg2.
  */
 public class Queue<E> {
     private Node<E> first, last;

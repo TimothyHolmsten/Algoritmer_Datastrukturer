@@ -34,9 +34,29 @@ public class BinarySearchTree<E extends Comparable<E>> {
     }
 
     public E find(E target) {
+        return find(target, root);
+    }
+
+    private E find(E target, Node<E> node) {
+        while (node != null) {
+            if (target.compareTo(node.data) < 0)
+                node = node.left;
+            else if (target.compareTo(node.data) > 0)
+                node = node.right;
+            else
+                return node.data;
+        }
+        return null;
     }
 
     public void printTree() {
+        StringBuilder sb = new StringBuilder();
+        printTree(root, sb);
+        System.out.println(sb.toString());
+    }
+
+    private void printTree(Node<E> node, StringBuilder sb) {
+
     }
 
     private static class Node<E> {

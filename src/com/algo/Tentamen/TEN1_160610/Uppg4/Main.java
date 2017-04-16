@@ -1,4 +1,4 @@
-package com.algo.TEN1_160610.Uppg4;
+package com.algo.Tentamen.TEN1_160610.Uppg4;
 
 import java.util.LinkedList;
 

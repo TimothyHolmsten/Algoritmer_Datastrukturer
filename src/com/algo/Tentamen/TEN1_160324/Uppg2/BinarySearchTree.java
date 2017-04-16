@@ -1,4 +1,4 @@
-package com.algo.TEN1_160324.Uppg2;
+package com.algo.Tentamen.TEN1_160324.Uppg2;
 
 public class BinarySearchTree<E extends Comparable<E>> {
 
